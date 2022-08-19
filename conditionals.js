@@ -18,16 +18,19 @@ console.log(whichSchool(8));
 console.log("I am 14. Which school should I go to?");
 console.log(whichSchool(14));
 */
+/*
+const whichSchool  = function (age) {
+  // Your code in here ...
+}
+*/
 
-let whichSchool = "";
-let age = 18;
 
-if (age = <= 13) {
-  whichSchool = "Elementary School";
-} else if (age > 13 && age <= 18) {
-  whichSchool = "Seconday School";
-} else if (age > 18) {
-  whichSchool = "Lighthouse Labs";
+var age = 21;
+
+function whichSchool(age) {
+  return (age < 13) ? "Elementary School"
+       : (age >= 13 && age <= 18) ? "Secondary School"
+       : "University"
 }
 
-console.log(whichSchool);
+console.log(whichSchool(age))
